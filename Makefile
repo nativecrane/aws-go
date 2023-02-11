@@ -4,7 +4,7 @@
 
 test:
 	@cp .env.test api/.env
-	@cd api; go test
+	@cd api; go mod tidy; go test
 	@rm api/.env
 
 ############################
@@ -41,7 +41,7 @@ deploy-prod: build archive-prod
 ############################
 
 build:
-	@cd api; env GOOS=linux GOARCH=arm64 go build -o bootstrap main.go
+	@cd api; go mod tidy; env GOOS=linux GOARCH=arm64 go build -o bootstrap main.go
 
 archive-dev:
 	@cp .env.dev api/.env
