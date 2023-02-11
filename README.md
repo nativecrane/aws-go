@@ -46,6 +46,11 @@ curl <api-endpoint>
 open . -a Visual\ Studio\ Code
 ```
 
+### 6. Perform an incremental update
+```
+make dev
+```
+
 ---
 
 ## What am I doing wrong?
