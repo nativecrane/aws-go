@@ -24,12 +24,12 @@ serverless create --template-url https://github.com/nativecrane/aws-go --path <m
 cd <my-cool-go-api>
 ```
 
-### 2. Configure an AWS profile in .env.dev
-
-### 3. Run unit tests
+### 2. Run unit tests
 ```
 make test
 ```
+
+### 3. Configure an AWS profile in .env.dev
 
 ### 4. Deploy starter project to AWS
 ```
@@ -52,3 +52,9 @@ open . -a Visual\ Studio\ Code
 
 * Is your AWS profile configured in `~/.aws/credentials`?
 * Does your configured AWS profile have appropriate permissions?
+
+---
+
+### Notes
+
+It's probably a good idea to add your .env files to .gitignore
