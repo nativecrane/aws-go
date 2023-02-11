@@ -1,0 +1,4 @@
+.serverless
+go.sum
+*.zip
+.DS_Store
