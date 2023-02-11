@@ -62,4 +62,4 @@ make dev
 
 ### Notes
 
-It's probably a good idea to add your .env files to .gitignore
+It's probably a good idea to add your .env files to .gitignore!
